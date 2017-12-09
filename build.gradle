@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+war{
+    archiveName = 'pqr.war'
+}
+
+dependencies {
+    compile 'javax:javaee-api:7.0'
+    compile 'javax.ws.rs:javax.ws.rs-api:2.0'
+    compile 'org.glassfish.jersey.core:jersey-common:2.26'
+    compile 'org.glassfish.jersey.core:jersey-client:2.26-b03'
+    compile 'org.glassfish.jersey.core:jersey-server:2.26'
+    compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.26'
+    compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.26'
+    compile 'org.glassfish.jersey.media:jersey-media-moxy:2.26'
+    compile 'org.glassfish.jersey.inject:jersey-hk2:2.26'
+    compile 'org.eclipse.microprofile.config:microprofile-config-api:1.1'
+}
