@@ -19,5 +19,5 @@ dependencies {
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.26'
     compile 'org.glassfish.jersey.media:jersey-media-moxy:2.26'
     compile 'org.glassfish.jersey.inject:jersey-hk2:2.26'
-    compile 'org.eclipse.microprofile.config:microprofile-config-api:1.1'
+    compile 'org.apache.geronimo.config:geronimo-config-impl:1.0'
 }
